@@ -3,7 +3,7 @@ import axios from 'axios';
 export const myAxiosGetRequest = async () => {
   const res = await axios({
     method: 'get',
-    url: 'http://10.0.2.2:4003/book',
+    url: 'http://192.168.0.103:4003/book',
   });
   return res;
 };
@@ -19,7 +19,7 @@ export const myAxiosPostRequest = async (
 ) => {
   const res = await axios({
     method: 'post',
-    url: 'http://10.0.2.2:4003/customer',
+    url: 'http://192.168.0.103:4003/customer',
     data: {
       name: name,
       phoneNo: phoneNo,
